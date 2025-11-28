@@ -1,0 +1,32 @@
+:root {
+  --background: #F3D4C6;
+  --secondary: #FAF6F2;
+  --text-color: #6A4A36;
+  --details: #F9E7E0;
+
+  --button-background: #C48F63;
+  --button-color: #FFFFFF;
+  --button-hover: #8B6648;
+
+  --gray: #A8A8A8;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text-color);
+  font-family: var(--font-nunito);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

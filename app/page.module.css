@@ -1,0 +1,61 @@
+.main {
+  padding: 3rem 10%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: end;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.title {
+  font-family: var(--font-gloock);
+  font-size: 1.5rem;
+}
+
+.nameContainer,
+.buttonContainer {
+  grid-column-start: span 2;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.nameContainer {
+  background-color: var(--details);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.listContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-left: 2rem;
+}
+
+.emptyState {
+  color: var(--gray);
+  font-size: 0.875rem;
+}
+
+@media (min-width: 900px) {
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .nameContainer {
+    font-size: 1.5rem;
+  }
+
+  .emptyState {
+    font-size: 1rem;
+  }
+}
